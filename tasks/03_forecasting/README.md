@@ -1,3 +1,7 @@
+[Workshop-Übersicht](../../README.md) · [Technische Vorbereitung](../../README_technical_preparation.md) · [Aufgabe 1: Datenqualität und Dubletten](../01_data_quality_and_duplicates/README.md) · [Aufgabe 2: Ausreisser und Noise](../02_outliers_and_noise/README.md) · [Aufgabe 3: Rückschätzung und Prognose](../03_forecasting/README.md)
+
+---
+
 # Aufgabe 3: Rückschätzung, Prognose und Managementaussage
 
 [Zur Workshop-Übersicht](../../workshop/README.md)
