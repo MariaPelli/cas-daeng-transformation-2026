@@ -18,7 +18,11 @@ Die [technische Vorbereitung](README_technical_preparation.md) beschreibt die Ei
 - Wie hätte sich eine historische Datenlücke plausibel schliessen lassen?
 - Wie gut lässt sich die Nachfrage für die folgende Woche prognostizieren?
 
-Als reale Datengrundlage dienen öffentlich verfügbare **NYC TLC Yellow Taxi Trip Records vom Juli 2025**. Für den Unterricht wurde daraus ein reproduzierbarer Case erstellt und um kontrollierte Datenprobleme ergänzt. MetroPulse Operations und die interne Systemgeschichte sind fiktiv; die zugrunde liegenden Taxidaten sind real.
+Als reale Datengrundlage dienen öffentlich verfügbare [NYC TLC Yellow Taxi Trip Records](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page) vom Juli 2025. Der ursprüngliche Datensatz kann als [Parquet-Datei für Juli 2025](https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-07.parquet) heruntergeladen werden. Die Bedeutung der ursprünglichen Attribute beschreibt das [Yellow Taxi Data Dictionary](https://www.nyc.gov/assets/tlc/downloads/pdf/data_dictionary_trip_records_yellow.pdf).
+
+Für den Unterricht wurde daraus ein reproduzierbarer Case erstellt und um kontrollierte
+Datenprobleme ergänzt. MetroPulse Operations und die interne Systemgeschichte sind
+fiktiv; die zugrunde liegenden Taxidaten sind real.
 
 Die Leitfrage lautet:
 
