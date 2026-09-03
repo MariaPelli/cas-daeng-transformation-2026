@@ -2,7 +2,7 @@
 
 [Zur Workshop-Übersicht](../../workshop/README.md)
 
-Diese Aufgabe beginnt in der zweiten Hälfte von Lektion 3 und wird in Lektion 4 abgeschlossen. Ihr untersucht den Rohdatensatz, formuliert Hypothesen und klärt, weshalb mehrere ähnliche Zeilen nicht automatisch dasselbe bedeuten.
+Ihr untersucht den Rohdatensatz, formuliert Hypothesen und klärt, weshalb mehrere ähnliche Zeilen nicht automatisch dasselbe bedeuten.
 
 ## Ausgangslage
 
@@ -15,13 +15,13 @@ Ihr sollt herausfinden, welche Erklärungen durch die Daten gestützt werden. No
 Ausgangsdaten:
 
 ```text
-data/input/trips_case_initial.parquet
+data/input/trips\_case\_initial.parquet
 ```
 
 Arbeitsnotebook:
 
 ```text
-tasks/01_data_quality_and_duplicates/task.ipynb
+tasks/01\_data\_quality\_and\_duplicates/task.ipynb
 ```
 
 Falls das Notebook noch nicht bereitgestellt ist, könnt ihr die beschriebenen Schritte in einem neuen Notebook im Aufgabenordner durchführen.
@@ -30,33 +30,33 @@ Falls das Notebook noch nicht bereitgestellt ist, könnt ihr die beschriebenen S
 
 Nach der Aufgabe könnt ihr:
 
-- Datenqualität anhand konkreter Analyseziele beurteilen;
-- Missingness als mögliches Muster statt nur als Fehler untersuchen;
-- exakte Duplikate mit einer fachlich sinnvollen Spaltenauswahl bestimmen;
-- Near-Duplicates über mehrere Attribute und Toleranzen finden;
-- technische Replay-Ereignisse von finanziellen Gegenbuchungen unterscheiden;
-- Entscheidungen, Unsicherheiten und Auswirkungen dokumentieren.
+* Datenqualität anhand konkreter Analyseziele beurteilen;
+* Missingness als mögliches Muster statt nur als Fehler untersuchen;
+* exakte Duplikate mit einer fachlich sinnvollen Spaltenauswahl bestimmen;
+* Near-Duplicates über mehrere Attribute und Toleranzen finden;
+* technische Replay-Ereignisse von finanziellen Gegenbuchungen unterscheiden;
+* Entscheidungen, Unsicherheiten und Auswirkungen dokumentieren.
 
 ## Teil A: EDA und Hypothesen
 
 Erstellt zunächst ein kompaktes Profil des Datensatzes. Untersucht mindestens:
 
-- Anzahl Zeilen und Spalten;
-- Datentypen und Wertebereiche;
-- zeitliche Abdeckung von Abfahrt, Ankunft und Ingestion;
-- Verteilungen wichtiger numerischer Merkmale;
-- Häufigkeiten kategorialer Merkmale;
-- fehlende Werte je Spalte;
-- Eindeutigkeit und Mehrfachvorkommen technischer IDs.
+* Anzahl Zeilen und Spalten;
+* Datentypen und Wertebereiche;
+* zeitliche Abdeckung von Abfahrt, Ankunft und Ingestion;
+* Verteilungen wichtiger numerischer Merkmale;
+* Häufigkeiten kategorialer Merkmale;
+* fehlende Werte je Spalte;
+* Eindeutigkeit und Mehrfachvorkommen technischer IDs.
 
 Erzeugt zusätzlich eine **vorläufige stündliche Fahrtenzahl**. Verwendet diese Sicht nur zur Exploration und bewahrt die Rohdaten auf Zeilenebene.
 
 Formuliert vor der Detailanalyse mindestens drei überprüfbare Hypothesen, zum Beispiel:
 
-- Der Peak stammt von real höherer Nachfrage.
-- Der Peak entstand durch ein verspätetes oder wiederholtes Laden von Ereignissen.
-- Fehlende Zahlungsinformationen treten zufällig auf.
-- Negative Gesamtbeträge sind fehlerhafte Fahrten.
+* Der Peak stammt von real höherer Nachfrage.
+* Der Peak entstand durch ein verspätetes oder wiederholtes Laden von Ereignissen.
+* Fehlende Zahlungsinformationen treten zufällig auf.
+* Negative Gesamtbeträge sind fehlerhafte Fahrten.
 
 Notiert zu jeder Hypothese, welche Beobachtung sie stützen oder widerlegen würde.
 
@@ -68,7 +68,7 @@ Bearbeitet folgende Fragen:
 
 1. Welche Spalten weisen Missingness auf?
 2. Treten fehlende Werte in denselben Zeilen gemeinsam auf?
-3. Unterscheidet sich die Missingness nach `payment_type`, Anbieter, Tarifcode oder Zeit?
+3. Unterscheidet sich die Missingness nach `payment\_type`, Anbieter, Tarifcode oder Zeit?
 4. Ist `dropna()` fachlich vertretbar? Welche Population würde dadurch entfernt?
 5. Bedeutet «fehlend» hier zwingend «unbekannt», oder kann es auch «nicht anwendbar» bedeuten?
 
@@ -86,10 +86,10 @@ Begründet, welche Spalten zum fachlichen Payload gehören. Herkunftsinformation
 
 Fragen:
 
-- Wie stark ändern sich die Trefferzahlen je Definition?
-- Welche Definition beantwortet die Frage nach doppelten Dateien, Ereignissen oder Fahrten?
-- Welche Zeile würdet ihr bei einem Replay behalten und warum?
-- Welche Lineage-Information muss erhalten bleiben?
+* Wie stark ändern sich die Trefferzahlen je Definition?
+* Welche Definition beantwortet die Frage nach doppelten Dateien, Ereignissen oder Fahrten?
+* Welche Zeile würdet ihr bei einem Replay behalten und warum?
+* Welche Lineage-Information muss erhalten bleiben?
 
 Kennzeichnet Verdachtsfälle zunächst über Flags. Löscht sie nicht stillschweigend.
 
@@ -106,11 +106,11 @@ Wählt Merkmale, deren zufällige gemeinsame Übereinstimmung relativ unwahrsche
 
 Fragen:
 
-- Welche Attribute sind stabil genug fürs Blocking?
-- Welche Merkmale dürfen geringfügig abweichen?
-- Wann entstehen False Positives, etwa bei stark frequentierten Zonen?
-- Welche Herkunftsspalten liefern zusätzliche Evidenz für einen Replay?
-- Welche Fälle bleiben trotz hoher Ähnlichkeit unklar?
+* Welche Attribute sind stabil genug fürs Blocking?
+* Welche Merkmale dürfen geringfügig abweichen?
+* Wann entstehen False Positives, etwa bei stark frequentierten Zonen?
+* Welche Herkunftsspalten liefern zusätzliche Evidenz für einen Replay?
+* Welche Fälle bleiben trotz hoher Ähnlichkeit unklar?
 
 ## Teil E: Replay oder Gegenbuchung?
 
@@ -118,8 +118,8 @@ Untersucht Gruppen sehr ähnlicher Datensätze mit positiven und negativen Betr�
 
 Entscheidet getrennt für mindestens zwei Analyseziele:
 
-- **Nachfrage:** Wie viele physische Fahrten fanden statt?
-- **Umsatz:** Welche finanziellen Ereignisse müssen in die Nettosumme einfliessen?
+* **Nachfrage:** Wie viele physische Fahrten fanden statt?
+* **Umsatz:** Welche finanziellen Ereignisse müssen in die Nettosumme einfliessen?
 
 Beantwortet:
 
@@ -137,11 +137,11 @@ Testet zunächst bewusst einen ungenauen Prompt, beispielsweise:
 
 Beobachtet, welche Annahmen die KI selbst ergänzt. Formuliert danach einen verbesserten Prompt mit:
 
-- Analyseziel;
-- relevanten Spalten und ihrer Bedeutung;
-- Definition von Ereignis versus Fahrt;
-- gewünschter Ausgabe als prüfbarer Code;
-- Aufforderung, Annahmen und mögliche Fehlklassifikationen zu nennen.
+* Analyseziel;
+* relevanten Spalten und ihrer Bedeutung;
+* Definition von Ereignis versus Fahrt;
+* gewünschter Ausgabe als prüfbarer Code;
+* Aufforderung, Annahmen und mögliche Fehlklassifikationen zu nennen.
 
 Übernehmt keinen Code, bevor ihr ihn an wenigen bekannten Kandidatengruppen geprüft habt.
 
@@ -149,20 +149,21 @@ Beobachtet, welche Annahmen die KI selbst ergänzt. Formuliert danach einen verb
 
 Am Ende präsentiert jede Gruppe kurz:
 
-- drei zentrale Datenqualitätsbefunde;
-- die verwendete Definition exakter Duplikate;
-- ihre Blocking- und Toleranzlogik für Near-Duplicates;
-- die Trennung von Replay und Gegenbuchung;
-- je eine Regel für Nachfrage- und Umsatzsicht;
-- mindestens einen ungeklärten Fall;
-- eine KI-Antwort, die durch besseren Kontext substanziell verbessert wurde.
+* drei zentrale Datenqualitätsbefunde;
+* die verwendete Definition exakter Duplikate;
+* ihre Blocking- und Toleranzlogik für Near-Duplicates;
+* die Trennung von Replay und Gegenbuchung;
+* je eine Regel für Nachfrage- und Umsatzsicht;
+* mindestens einen ungeklärten Fall;
+* eine KI-Antwort, die durch besseren Kontext substanziell verbessert wurde.
 
 ## Nach dem Walkthrough
 
 Nach der Besprechung werden eine Musterlösung und ein gemeinsamer Checkpoint unter neuen Dateinamen veröffentlicht. Eure Datei `task.ipynb` bleibt unverändert. Für Aufgabe 2 verwendet ihr danach den bereitgestellten Checkpoint:
 
 ```text
-data/checkpoints/checkpoint_01_resolved_events.parquet
+data/checkpoints/checkpoint\_01\_resolved\_events.parquet
 ```
 
-Die detaillierte Erläuterung wird nach der Gruppenphase unter `tasks/01_data_quality_and_duplicates/released/WALKTHROUGH.md` freigeschaltet.
+Die detaillierte Erläuterung wird nach der Gruppenphase unter `tasks/01\_data\_quality\_and\_duplicates/released/WALKTHROUGH.md` freigeschaltet.
+

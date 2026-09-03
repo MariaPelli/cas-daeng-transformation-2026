@@ -1,8 +1,12 @@
+[Workshop-Übersicht](README.md) · [Technische Vorbereitung](README_technical_preparation.md) · [Aufgabe 1: Datenqualität und Dubletten](tasks/01_data_quality_and_duplicates/README.md) · [Aufgabe 2: Ausreisser und Noise](tasks/02_outliers_and_noise/README.md) · [Aufgabe 3: Rückschätzung und Prognose](tasks/03_forecasting/README.md)
+
+---
+
 # CAS Data Engineering · Transformation
 
-Diese Startseite beschreibt ausschliesslich die **technische Vorbereitung** des
-Workshops. Die inhaltliche Workshop-Übersicht und die Links zu den einzelnen
-Blöcken werden später ergänzt.
+Diese Seite beschreibt ausschliesslich die **technische Vorbereitung** des
+Workshops. Die inhaltliche [Workshop-Übersicht](README.md) und die Links zu den
+einzelnen Aufgaben befinden sich in der Navigation zuoberst.
 
 Für den Workshop stehen genau zwei gleichwertige Wege zur Verfügung:
 
@@ -329,8 +333,8 @@ welchen Unterordner sie gehören. Diese Dateien können auf GitHub einzeln über
 Typische neue Dateien sind:
 
 ```text
-tasks/NN_name/released/WALKTHROUGH.md
-tasks/NN_name/released/task_sample_solution.ipynb
+tasks/NN_name/WALKTHROUGH.md
+tasks/NN_name/task_sample_solution.ipynb
 data/checkpoints/checkpoint_NN_name.parquet
 ```
 
@@ -355,11 +359,10 @@ data/
 docs/setup/           ergänzende technische Hinweise
 notebooks/            technische Start- und Prüfnotebooks
 scripts/              Hilfs- und Prüfroutinen
-tasks/                später: ein Ordner pro Workshop-Aufgabe
+tasks/                ein Ordner pro Workshop-Aufgabe
 ```
 
-## Spätere Workshop-Navigation
+## Workshop-Navigation
 
 Die Übersicht über den Transformationstag, die Fallstudie und die einzelnen
-Workshopblöcke wird in einer späteren Projektphase erstellt und von dieser
-Startseite aus verlinkt.
+Workshopaufgaben ist über die Navigation zuoberst erreichbar.

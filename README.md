@@ -1,8 +1,12 @@
+[Workshop-Übersicht](README.md) · [Technische Vorbereitung](README_technical_preparation.md) · [Aufgabe 1: Datenqualität und Dubletten](tasks/01_data_quality_and_duplicates/README.md) · [Aufgabe 2: Ausreisser und Noise](tasks/02_outliers_and_noise/README.md) · [Aufgabe 3: Rückschätzung und Prognose](tasks/03_forecasting/README.md)
+
+---
+
 # Workshop: «One row, one ride?»
 
 Dieser Workshop begleitet den Transformationstag im CAS Data Engineering. Wir arbeiten den ganzen Tag an einem zusammenhängenden Fall: Aus Rohdaten entsteht schrittweise eine belastbare Entscheidungsgrundlage für Betrieb und Management.
 
-Die technische Einrichtung für lokale Arbeit und GitHub Codespaces wird später von der Übersichtsseite der Repository hierher verlinkt. Diese Seite beschreibt den fachlichen Einstieg und den Ablauf des Workshops.
+Die [technische Vorbereitung](README_technical_preparation.md) beschreibt die Einrichtung für lokale Arbeit und GitHub Codespaces. Diese Seite beschreibt den fachlichen Einstieg und den Ablauf des Workshops.
 
 ## Der Fall
 
@@ -44,7 +48,7 @@ Ihr arbeitet in Zweier- oder Dreiergruppen. Jede Gruppe führt ein kurzes **Deci
 4. Welche Behandlung wählt ihr für welchen Analysezweck?
 5. Welche Unsicherheit bleibt bestehen?
 
-Nach jeder Gruppenphase folgt ein gemeinsamer Walkthrough. Anschliessend werden neue Dateien mit **neuen Dateinamen** veröffentlicht, zum Beispiel `task_sample_solution.ipynb` und `released/WALKTHROUGH.md`. Eure Datei `task.ipynb` wird dadurch nicht überschrieben.
+Nach jeder Gruppenphase folgt ein gemeinsamer Walkthrough. Anschliessend werden neue Dateien mit **neuen Dateinamen** veröffentlicht, zum Beispiel `task_sample_solution.ipynb` und `WALKTHROUGH.md`. Eure Datei `task.ipynb` wird dadurch nicht überschrieben.
 
 ## Tagesablauf in neun Lektionen
 
@@ -62,13 +66,13 @@ Nach jeder Gruppenphase folgt ein gemeinsamer Walkthrough. Anschliessend werden 
 
 ## Die drei Aufgaben
 
-1. [Datenqualität und Dubletten](../tasks/01_data_quality_and_duplicates/README.md)  
+1. [Datenqualität und Dubletten](tasks/01_data_quality_and_duplicates/README.md)  
    Vom ersten Profiling bis zur Unterscheidung von Replay-Ereignissen und finanziellen Gegenbuchungen.
 
-2. [Ausreisser und Noise](../tasks/02_outliers_and_noise/README.md)  
+2. [Ausreisser und Noise](tasks/02_outliers_and_noise/README.md)  
    Von univariaten Regeln zu multivariaten Anomalien und fachlich begründeten Entscheidungen.
 
-3. [Rückschätzung und Prognose](../tasks/03_forecasting/README.md)  
+3. [Rückschätzung und Prognose](tasks/03_forecasting/README.md)  
    Von einem zweckspezifischen Analysedatensatz zu Backcast, Forecast und Managementaussage.
 
 Die Aufgaben bauen aufeinander auf. Nach den ersten beiden Walkthroughs wird jeweils ein gemeinsamer Checkpoint bereitgestellt, damit alle Gruppen mit einer vergleichbaren Ausgangslage weiterarbeiten können.

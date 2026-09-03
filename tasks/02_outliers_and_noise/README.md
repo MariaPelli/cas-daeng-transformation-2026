@@ -24,7 +24,13 @@ Arbeitsnotebook:
 tasks/02_outliers_and_noise/task.ipynb
 ```
 
-Ergänzende Referenz- und Lookup-Daten werden im Repository bereitgestellt. Dokumentiert, welche externe oder fachliche Evidenz ihr tatsächlich verwendet.
+Zonenreferenz:
+
+```text
+data/reference/taxi_zone_lookup.csv
+```
+
+Die offizielle TLC-Tabelle ordnet `PULocationID` und `DOLocationID` einem Borough, Zonennamen und einer Service-Zone zu. Dokumentiert, welche externe oder fachliche Evidenz ihr tatsächlich verwendet.
 
 ## Lernziele
 
