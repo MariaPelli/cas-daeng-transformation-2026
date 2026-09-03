@@ -1,0 +1,21 @@
+{
+  "name": "CAS DAENG Transformation",
+  "postCreateCommand": "bash .devcontainer/post-create.sh",
+  "hostRequirements": {
+    "cpus": 2,
+    "memory": "8gb",
+    "storage": "32gb"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter"
+      ],
+      "settings": {
+        "python.terminal.activateEnvironment": true,
+        "jupyter.notebookFileRoot": "${containerWorkspaceFolder}"
+      }
+    }
+  }
+}

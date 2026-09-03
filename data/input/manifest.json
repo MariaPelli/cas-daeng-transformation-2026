@@ -1,0 +1,9 @@
+{
+  "file": "trips_case_initial.parquet",
+  "sha256": "5b94af3ee91d9d51b55a9471cdc57be792d560015423ad1f12724b40a0bc53c2",
+  "bytes": 7858483,
+  "rows": 200900,
+  "columns": 24,
+  "source_dataset": "NYC TLC Yellow Taxi Trip Records, July 2025",
+  "note": "Workshop sample with didactically prepared technical events; details are released block by block."
+}

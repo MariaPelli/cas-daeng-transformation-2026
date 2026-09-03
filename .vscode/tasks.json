@@ -1,0 +1,18 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Workshop: Setup prüfen",
+      "type": "shell",
+      "command": "conda run --no-capture-output -n cas-daeng-transformation python scripts/verify_setup.py",
+      "problemMatcher": []
+    },
+    {
+      "label": "Workshop: Neue Materialien laden",
+      "type": "shell",
+      "command": "git pull --ff-only",
+      "problemMatcher": []
+    }
+  ]
+}
+
