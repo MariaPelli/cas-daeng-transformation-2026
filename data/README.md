@@ -1,5 +1,7 @@
 # Daten im Workshop
 
+Die folgenden Ordner gehören zum Taxifall (Aufgaben 1–3). Die vier CSV-Dateien für Aufgabe 0 liegen [direkt bei der Aufgabe](../tasks/00_compatibility_and_integration/data/).
+
 ## Ordner
 
 | Ordner | Zweck | Versionskontrolle |

@@ -1,10 +1,10 @@
-[Workshop-Übersicht](README.md) · [Technische Vorbereitung](README_technical_preparation.md) · [Aufgabe 1: Datenqualität und Dubletten](tasks/01_data_quality_and_duplicates/README.md) · [Aufgabe 2: Ausreisser und Noise](tasks/02_outliers_and_noise/README.md) · [Aufgabe 3: Rückschätzung und Prognose](tasks/03_forecasting/README.md)
+[Workshop-Übersicht](README.md) · [Technische Vorbereitung](README_technical_preparation.md) · [Aufgabe 0: Kompatibilität und Integration](tasks/00_compatibility_and_integration/README.md) · [Aufgabe 1: Datenqualität und Dubletten](tasks/01_data_quality_and_duplicates/README.md) · [Aufgabe 2: Ausreisser und Noise](tasks/02_outliers_and_noise/README.md) · [Aufgabe 3: Rückschätzung und Prognose](tasks/03_forecasting/README.md)
 
 ---
 
 # Workshop: «One row, one ride?»
 
-Dieser Workshop begleitet den Transformationstag im CAS Data Engineering. Wir arbeiten den ganzen Tag an einem zusammenhängenden Fall: Aus Rohdaten entsteht schrittweise eine belastbare Entscheidungsgrundlage für Betrieb und Management.
+Dieser Workshop begleitet den Transformationstag im CAS Data Engineering. Zum Einstieg verknüpfen wir Sensormessungen mit Maschinenstamm und Wartungsereignissen. In den Aufgaben 1–3 bearbeiten wir den zusammenhängenden Taxifall: Aus Rohdaten entsteht schrittweise eine belastbare Entscheidungsgrundlage für Betrieb und Management.
 
 Die [technische Vorbereitung](README_technical_preparation.md) beschreibt die Einrichtung für lokale Arbeit und GitHub Codespaces. Diese Seite beschreibt den fachlichen Einstieg und den Ablauf des Workshops.
 
@@ -58,7 +58,7 @@ Nach jeder Gruppenphase folgt ein gemeinsamer Walkthrough. Anschliessend werden 
 
 | Lektion | Format | Schwerpunkt |
 |---:|---|---|
-| 1 | Vorlesung | Transformation, Integration, Kompatibilität sowie ein kompakter Blick auf Streams und verteilte Verarbeitung |
+| 1 | Vorlesung und Einstieg in Aufgabe 0 | Transformation, Kompatibilität und Integration am Maschinenbeispiel sowie ein kompakter Blick auf Streams und verteilte Verarbeitung |
 | 2 | Vorlesung | Datenqualität, Missingness, exakte Duplikate und toleranzbasierter Dublettenabgleich |
 | 3 | Case und Start Gruppenarbeit | Case-Einführung, OpenRefine-Demo, Jupyter-Demo und Beginn von Aufgabe 1 |
 | 4 | Gruppenarbeit und Walkthrough | EDA, Hypothesen, Missingness, Duplikate, Near-Duplicates, Replays und Gegenbuchungen |
@@ -68,7 +68,10 @@ Nach jeder Gruppenphase folgt ein gemeinsamer Walkthrough. Anschliessend werden 
 | 8 | Demo und Vorlesung | Modularisierung, zweckspezifische Datenprodukte und Prognosen |
 | 9 | Gruppenarbeit und Walkthrough | Rückschätzung, Zukunftsprognose, Managementinterpretation und KI-Retrospektive |
 
-## Die drei Aufgaben
+## Die vier Aufgaben
+
+0. [Kompatibilität und Integration](tasks/00_compatibility_and_integration/README.md)
+   Von lückenhaften Maschinenmessungen über die zeitlich passende Wartung bis zur Temperaturprognose.
 
 1. [Datenqualität und Dubletten](tasks/01_data_quality_and_duplicates/README.md)  
    Vom ersten Profiling bis zur Unterscheidung von Replay-Ereignissen und finanziellen Gegenbuchungen.
@@ -79,11 +82,11 @@ Nach jeder Gruppenphase folgt ein gemeinsamer Walkthrough. Anschliessend werden 
 3. [Rückschätzung und Prognose](tasks/03_forecasting/README.md)  
    Von einem zweckspezifischen Analysedatensatz zu Backcast, Forecast und Managementaussage.
 
-Die Aufgaben bauen aufeinander auf. Nach den ersten beiden Walkthroughs wird jeweils ein gemeinsamer Checkpoint bereitgestellt, damit alle Gruppen mit einer vergleichbaren Ausgangslage weiterarbeiten können.
+Aufgabe 0 verwendet eigene Maschinendaten. Die Aufgaben 1–3 bauen aufeinander auf. Nach den Walkthroughs zu Aufgabe 1 und Aufgabe 2 wird jeweils ein gemeinsamer Checkpoint bereitgestellt, damit alle Gruppen mit einer vergleichbaren Ausgangslage weiterarbeiten können.
 
 ## Daten und erwartete Struktur
 
-Der Ausgangsdatensatz liegt unter:
+Die vier CSV-Dateien für Aufgabe 0 liegen im [Datenordner der Aufgabe](tasks/00_compatibility_and_integration/data/). Der Ausgangsdatensatz des Taxifalls liegt unter:
 
 ```text
 data/input/trips_case_initial.parquet

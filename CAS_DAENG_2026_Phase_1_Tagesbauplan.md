@@ -3,6 +3,7 @@
 ## Phase 1: Didaktischer Tagesbauplan
 
 **Status:** Entwurf zur Freigabe durch die Kursleitung  
+**Hinweis zur Durchführung:** Die aktuelle [Workshop-Übersicht](README.md) beginnt mit [Aufgabe 0 zu Maschinendaten](tasks/00_compatibility_and_integration/README.md). «Block 0» weiter unten bezeichnet den ursprünglich geplanten Einstieg in den Taxifall.
 **Umfang:** 9 Lektionen à 45 Minuten = 405 Minuten Netto-Unterrichtszeit  
 **Case:** *One row, one ride?* – MetroPulse Operations  
 **Basis:** Skript 2025, bestehender Datenprototyp und bisherige didaktische Entscheidungen

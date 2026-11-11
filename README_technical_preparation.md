@@ -1,4 +1,4 @@
-[Workshop-Übersicht](README.md) · [Technische Vorbereitung](README_technical_preparation.md) · [Aufgabe 1: Datenqualität und Dubletten](tasks/01_data_quality_and_duplicates/README.md) · [Aufgabe 2: Ausreisser und Noise](tasks/02_outliers_and_noise/README.md) · [Aufgabe 3: Rückschätzung und Prognose](tasks/03_forecasting/README.md)
+[Workshop-Übersicht](README.md) · [Technische Vorbereitung](README_technical_preparation.md) · [Aufgabe 0: Kompatibilität und Integration](tasks/00_compatibility_and_integration/README.md) · [Aufgabe 1: Datenqualität und Dubletten](tasks/01_data_quality_and_duplicates/README.md) · [Aufgabe 2: Ausreisser und Noise](tasks/02_outliers_and_noise/README.md) · [Aufgabe 3: Rückschätzung und Prognose](tasks/03_forecasting/README.md)
 
 ---
 
@@ -354,7 +354,7 @@ gezeigten Update-Befehl zu aktualisieren.
 data/
   input/             unveränderlicher Ausgangspunkt
   reference/         Referenz- und Kontextdaten
-  checkpoints/       nach jedem Block freigegebene Zwischenstände
+  checkpoints/       Zwischenstände für die Folgeaufgaben im Taxifall
   work/              lokale, nicht versionierte Arbeitsergebnisse
 docs/setup/           ergänzende technische Hinweise
 notebooks/            technische Start- und Prüfnotebooks

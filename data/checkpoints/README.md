@@ -1,7 +1,7 @@
 # Checkpoints
 
-Nach jedem Workshopblock wird hier ein geprüfter Zwischenstand unter einem
-neuen Dateinamen ergänzt. Bestehende Checkpoints werden während des Workshops
+Die Aufgaben 1 und 2 liefern je einen geprüften Zwischenstand für die nächste
+Aufgabe im Taxifall. Aufgabe 0 arbeitet mit eigenen CSV-Dateien. Bestehende Checkpoints werden während des Workshops
 nicht überschrieben.
 
 Das geplante Namensschema lautet:

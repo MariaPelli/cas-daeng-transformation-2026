@@ -1,4 +1,4 @@
-[Workshop-Übersicht](../../README.md) · [Technische Vorbereitung](../../README_technical_preparation.md) · [Aufgabe 1: Datenqualität und Dubletten](../01_data_quality_and_duplicates/README.md) · [Aufgabe 2: Ausreisser und Noise](../02_outliers_and_noise/README.md) · [Aufgabe 3: Rückschätzung und Prognose](../03_forecasting/README.md)
+[Workshop-Übersicht](../../README.md) · [Technische Vorbereitung](../../README_technical_preparation.md) · [Aufgabe 0: Kompatibilität und Integration](../00_compatibility_and_integration/README.md) · [Aufgabe 1: Datenqualität und Dubletten](../01_data_quality_and_duplicates/README.md) · [Aufgabe 2: Ausreisser und Noise](../02_outliers_and_noise/README.md) · [Aufgabe 3: Rückschätzung und Prognose](../03_forecasting/README.md)
 
 ---
 
@@ -16,7 +16,7 @@ Eure Aufgabe ist es, diese Empfehlung zu prüfen. Ein Modell liefert Kandidaten,
 
 ## Dateien
 
-Gemeinsamer Ausgangspunkt nach dem ersten Walkthrough:
+Gemeinsamer Ausgangspunkt nach dem Walkthrough zu Aufgabe 1:
 
 ```text
 data/checkpoints/checkpoint_01_resolved_events.parquet
